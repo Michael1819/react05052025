@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <a href="blog.html">Go to blog</a>
+    <!-- Headings-->
+    <h1>Heading one</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
+
+    <!-- Paragraph -->
+    <p>
+      HTML <strong>(HyperText Markup Language)</strong> is the foundational
+      language of the web. It is used to define the
+      <strong><em>structure and content of a webpage</em></strong
+      >.
+    </p>
+    <p>
+      Elements like<a href="http://google.com" target="_blank"
+        >headings, paragraphs, images, links, and buttons</a
+      >
+      are all created using HTML tags. HTML itself does not handle styling or
+      behavior, but it provides the “skeleton” of the page.
+    </p>
+
+    <!-- Lists-->
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+    </ul>
+
+    <ol>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li>List Item 4</li>
+    </ol>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Michael Zhang</td>
+          <td>xx@gmail.com</td>
+          <td>xx</td>
+        </tr>
+        <tr>
+          <td>Michael</td>
+          <td>xx@gmail.com</td>
+          <td>xx</td>
+        </tr>
+        <tr>
+          <td>Michael</td>
+          <td>xx@gmail.com</td>
+          <td>xx</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- Forms -->
+    <form action="process.php" method="post">
+      <div>
+        <label>First Name</label>
+        <input type="text" name="firstName" />
+      </div>
+      <br />
+      <div>
+        <label>Last Name</label>
+        <input type="text" name="lastName" />
+      </div>
+      <br />
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label>Message</label>
+        <textarea name="message"></textarea>
+      </div>
+      <br />
+      <div>
+        <label>Gender</label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>Age</label>
+        <input type="number" name="age" />
+      </div>
+      <br />
+      <div>
+        <label>Birth</label>
+        <input type="date" name="birth" value="2000-01-01" />
+      </div>
+      <br />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+
+    <!-- Button -->
+    <button>Click Me</button>
+    <br />
+    <!-- Image -->
+    <a href="image/desk.jpg">
+      <img src="image/desk.jpg" alt="desk" width="200"
+    /></a>
+
+    <!-- Quotations -->
+    <blockquote>dfsfasfsfsfsda</blockquote>
+
+    <p><abbr title="World Web Website">WWW</abbr></p>
+
+    <p><cite>fjsklajfkls</cite>safsafsasdfsfs</p>
+  </body>
 </html>
