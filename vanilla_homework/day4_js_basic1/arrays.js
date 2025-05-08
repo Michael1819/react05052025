@@ -7,7 +7,8 @@ export function checkIfStringIsNumber(str) {
   //   Example:
   //   '1' -> true, "a" -> false, "1a" -> false
   const num = Number(str);
-  return typeof num === "number";
+  // return typeof num === "number";
+  return typeof num === "number" && !isNaN(num);
 }
 
 export function findAvgOfNums(arr) {
@@ -72,7 +73,8 @@ export function findMaxNum(arr) {
   //   Do not use Math.max
   //   Example: const arr = [1, 2, 3, 4, 5];
   if (arr.length === 0) {
-    return null;
+    // return null;
+    return 0;
   }
   let max = arr[0];
   for (let i = 1; i < arr.length; i++) {

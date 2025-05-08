@@ -34,14 +34,21 @@ export function cancelExpiredEvents(events) {
   // ];
   // Expected events: // an array of events, but event1 and event2 are canceled, event3 is not canceled
 
+  // events.forEach((event) => {
+  //   if (event.isCanceled) {
+  //     event.isCanceled = true;
+  //   }
+  // });
+  // return events;
+  const now = new Date("2024-01-01");
+
   events.forEach((event) => {
-    if (event.isCanceled) {
+    const eventDate = new Date(event.date);
+    if (eventDate < now) {
       event.isCanceled = true;
     }
   });
   return events;
-
-  
 }
 
 export function findEventByType(events, type) {
