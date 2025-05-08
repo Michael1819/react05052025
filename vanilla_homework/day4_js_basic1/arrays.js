@@ -7,7 +7,7 @@ export function checkIfStringIsNumber(str) {
   //   Example:
   //   '1' -> true, "a" -> false, "1a" -> false
   const num = Number(str);
-  return typeof num === "number" && !isNaN(num);
+  return typeof num === "number";
 }
 
 export function findAvgOfNums(arr) {
@@ -182,7 +182,7 @@ export function changeNumsByAmount(nums, amount, operator) {
       return num / amount;
     } else {
       return num;
-    } 
+    }
   });
 }
 
@@ -194,4 +194,3 @@ export function removeNumFromArr(nums, num) {
   // Expected output: [1, 2, 4, 5];
   return nums.filter((n) => n !== num);
 }
-  
