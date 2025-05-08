@@ -6,8 +6,8 @@ function accessGlobal() {
   return globalVar;
 }
 
-// console.log(accessGlobal()); // Expected output?
-// console.log(globalVar);      // Expected output?
+// console.log(accessGlobal()); // Expected output? "I am global"
+// console.log(globalVar);      // Expected output? "I am global"
 
 // Local scope
 function localScope() {
@@ -15,28 +15,28 @@ function localScope() {
 }
 
 // localScope();
-// console.log(localVar); // What happens here and why?
-    
+// console.log(localVar); // What happens here and why? ReferenceError
+
 // Block scope
 if (true) {
   let blockVar = "I exist inside this block only";
   const blockConst = "So do I!";
 }
 
-// console.log(blockVar); // What is the result and why?
-// console.log(blockConst); // What is the result and why?
+// console.log(blockVar); // What is the result and why? ReferenceError, blockscope cannot be access outside the scope
+// console.log(blockConst); // What is the result and why? ReferenceError, blockscope cannot be access outside the scope
 
 // Function scope vs block scope
 function loopScope() {
   for (var i = 0; i < 3; i++) {
-    // console.log(i); // Outputs during loop?
+    // console.log(i); // Outputs during loop? 0, 1, 2
   }
-  //   console.log("After loop with var: " + i); // What happens here?
+  //   console.log("After loop with var: " + i); // What happens here? 3
 
   for (let j = 0; j < 3; j++) {
-    console.log(j); // Outputs during loop?
+    console.log(j); // Outputs during loop? 0, 1, 2
   }
-  //   console.log("After loop with let: " + j); // What happens here?
+  //   console.log("After loop with let: " + j); // What happens here? j is not defined
 }
 
 loopScope();
