@@ -15,3 +15,4 @@ const book1 = Object.create(bookProtos, {
 });
 
 console.log(book1);
+
