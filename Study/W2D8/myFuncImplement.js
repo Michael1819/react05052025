@@ -15,11 +15,11 @@ Array.prototype.myMap = function (callbackFn) {
   return result;
 };
 
-// const doubledPlusIndex = arr.myMap((element, index, array) => {
+// const double = arr.myMap((element, index, array) => {
 //   console.log("index:", index, "array:", array);
 //   return element * 2;
 // });
-// // console.log(doubledPlusIndex);
+// // console.log(double);
 
 Array.prototype.myFilter = function (callbackFn) {
   const result = [];
@@ -37,23 +37,23 @@ Array.prototype.myFilter = function (callbackFn) {
 // });
 // console.log(test);
 
-Array.prototype.myReduce = function (callbackFn, initialValue) {
-  let accumulator;
+Array.prototype.myReduce = function (callbackFn, initial) {
+  let acc;
   let startIndex;
 
-  if (initialValue !== undefined) {
-    accumulator = initialValue;
+  if (initial !== undefined) {
+    acc = initial;
     startIndex = 0;
   } else {
-    accumulator = this[0];
+    acc = this[0];
     startIndex = 1;
   }
 
   for (let i = startIndex; i < this.length; i++) {
-    accumulator = callbackFn(accumulator, this[i], i, this);
+    acc = callbackFn(acc, this[i], i, this);
   }
 
-  return accumulator;
+  return acc;
 };
 
 const sum = arr.myReduce((acc, curr, index, array) => {
