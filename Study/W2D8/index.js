@@ -69,11 +69,11 @@ const myAccount = createBankAccount();
 // myAccount.withdraw(20);    // 130
 // myAccount.checkBalance();  // 130
 
-for (var i = 0; i < 3; i++) {
-  setTimeout(function () {
-    console.log("i:", i);
-  }, 1000);
-}
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(function () {
+//     console.log("i:", i);
+//   }, 1000);
+// }
 
 function once(fn) {
   let called = false;
@@ -122,3 +122,5 @@ const nestedKeys = Object.keys(user.contact); // ['email', 'phone']
 
 // console.log("Top level keys:", topKeys);
 // console.log("Nested keys:", nestedKeys);
+
+
