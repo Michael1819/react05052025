@@ -40,3 +40,4 @@ const user2 = new User("Jane");
 const user3 = new User("Jim");
 
 User.getUserCount();
+

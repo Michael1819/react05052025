@@ -164,6 +164,7 @@ export function removeTypes(arr, typeToRemove) {
   }
 
   return result;
+
 }
 
 // reinvent the wheel: prototype methods
