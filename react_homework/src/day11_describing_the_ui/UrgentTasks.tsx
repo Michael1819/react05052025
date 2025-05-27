@@ -18,10 +18,10 @@ export default function UrgentTasks({ tasks }: { tasks: TaskType[] }) {
       <h1>Urgent Tasks</h1>
       {tasks
         .filter((task) => task.priority === "urgent")
-        .map((task) => (
-          <div key={task.id}>
-            <h2>{task.name}</h2>
-            <p>{task.priority}</p>
+        .map(({id, name, priority}) => (
+          <div key={id}>
+            <h2>{name}</h2>
+            <p>{priority}</p>
           </div>
         ))}
     </div>

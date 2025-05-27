@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 export default function ConditionalRendering() {
   const isLoggedIn = true;
   const hasNotifications = false;
-  const userRole = 'admin'; // 可变为 'user' 或 'guest'
-  const cartItems = ['Apple', 'Banana'];
+  const userRole = "admin"; // 可变为 'user' 或 'guest'
+  const cartItems = ["Apple", "Banana"];
 
   function renderGreeting() {
     if (isLoggedIn) {
@@ -17,22 +17,26 @@ export default function ConditionalRendering() {
     <div>
       <h1>Conditional Rendering Examples</h1>
 
-      {/* if branching */}  
+      {/* if branching */}
       {renderGreeting()}
 
       {/* ternary operator */}
-      <p>{cartItems.length > 0 ? 'You have items in your cart.' : 'Your cart is empty.'}</p>
+      <p>
+        {cartItems.length > 0
+          ? "You have items in your cart."
+          : "Your cart is empty."}
+      </p>
 
       {/* logical and && */}
       {hasNotifications && <p>You have new notifications.</p>}
 
       {/* nested ternary operator */}
       <p>
-        {userRole === 'admin'
-          ? 'You have admin access.'
-          : userRole === 'user'
-          ? 'You are a regular user.'
-          : 'Unknown role.'}
+        {userRole === "admin"
+          ? "You have admin access."
+          : userRole === "user"
+          ? "You are a regular user."
+          : "Unknown role."}
       </p>
 
       {/* conditional rendering list */}

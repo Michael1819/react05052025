@@ -31,17 +31,17 @@ export default function RenderingLists() {
 
       <h2>Users</h2>
       <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            {user.name} - {user.age} years old
+        {users.map(({id, name, age}) => (
+          <li key={id}>
+            {name} - {age} years old
           </li>
         ))}
       </ul>
 
       <h2>User Cards</h2>
       <div>
-        {users.map((user) => (
-          <UserCard key={user.id} name={user.name} age={user.age} />
+        {users.map(({ id, name, age }) => (
+          <UserCard key={id} name={name} age={age} />
         ))}
       </div>
 

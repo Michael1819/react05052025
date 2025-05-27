@@ -33,13 +33,13 @@ export function StudentFn({ student }: { student: StudentType }) {
 
 export class StudentClass extends Component<{ student: StudentType }> {
   render() {
-    const { student } = this.props;
+    const { id, name, age, grade } = this.props.student;
     return (
       <div data-testid="student">
-        <p>{student.id}</p>
-        <p>{student.name}</p>
-        <p>{student.age}</p>
-        <p>{student.grade}</p>
+        <p>{id}</p>
+        <p>{name}</p>
+        <p>{age}</p>
+        <p>{grade}</p>
       </div>
     );
   }
