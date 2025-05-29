@@ -1,18 +1,9 @@
-import Event from "./day12interactivity/Event";
-import State from "./day12interactivity/State";
-import RenderAndCommit from "./day12interactivity/RenderAndCommit";
-import StateSnapshot from "./day12interactivity/Snapshot";
-import UpdatingObjectState from "./day12interactivity/UpdatingObjectState";
-import UpdatingArrayState from "./day12interactivity/UpdatingArrayState";
+import RefComponent from "./day16patterns/RefComponent";
+
 function App() {
   return (
     <div>
-      {/* <Event /> */}
-      {/* <State /> */}
-      {/* <RenderAndCommit /> */}
-      {/* <StateSnapshot /> */}
-      {/* <UpdatingObjectState /> */}
-      <UpdatingArrayState />
+      <RefComponent  />
     </div>
   );
 }
