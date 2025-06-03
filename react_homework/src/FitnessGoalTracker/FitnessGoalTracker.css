@@ -1,0 +1,93 @@
+.tracker-container {
+    width: 500px;              
+    margin: 40px auto;        
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;  
+  }
+
+.tracker-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tracker-input,
+.tracker-select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.tracker-input::placeholder {
+    color: #ccc;
+}
+
+.tracker-select option {
+    color: black;
+}
+
+.tracker-add-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.tracker-add-button:hover {
+    background-color: #4cae4c;
+}
+
+.tracker-goal-list {
+    margin-top: 10px;
+}
+
+.tracker-goal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+}
+
+.tracker-achieve-button {
+    padding: 6px 12px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tracker-achieve-button:hover {
+    background-color: #357ae8;
+}
+
+.tracker-achieved-text {
+    color: green;
+    font-weight: bold;
+}
+  

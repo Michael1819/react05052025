@@ -1,12 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import SelectAllForm from "./day14_practice/SelectAllForm/index";
-import ShoppingCart from "./day14_practice/ShoppingCart/index";
+import FitnessGoalTracker from "./FitnessGoalTracker/FitnessGoalTracker.jsx";
 function App() {
   return (
     <>
-      {/* <SelectAllForm /> */}
-      <ShoppingCart />
+      <FitnessGoalTracker />
     </>
 
   );
