@@ -1,11 +1,7 @@
-import RefComponent from "./day16patterns/RefComponent";
+import React from "react";
 
 function App() {
-  return (
-    <div>
-      <RefComponent  />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
