@@ -12,15 +12,15 @@ function useDisclosure() {
   }
 
   function toggle() {
-    setIsOpen(prev => !prev);
+    setIsOpen((prev) => !prev);
   }
 
   function handlers() {
     return {
       open,
       close,
-      toggle
-    }
+      toggle,
+    };
   }
   return [isOpen, handlers];
 }
@@ -28,12 +28,9 @@ function useDisclosure() {
 export default function Test() {
   const [isDisable, handlers] = useDisclosure();
 
-  
-
   return (
-
-      <div disabled={isDisable} onClick={handlers.open}>
-        <button>Button is {`${isDisable ? "disabled" : "enabled"}`}</button>
-      </div>
-    )
+    <div disabled={isDisable} onClick={() => handlers.toggle()}>
+      <button>Button is {`${isDisable ? "disabled" : "enabled"}`}</button>
+    </div>
+  );
 }
