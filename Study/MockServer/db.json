@@ -1,3 +1,39 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "id": "4246",
+      "task": "sdafsdsd",
+      "completed": false,
+      "date": "2025-06-11",
+      "description": "fsdafs"
+    },
+    {
+      "id": "a3f4",
+      "task": "gsda",
+      "completed": false,
+      "date": "2025-06-11",
+      "description": "default"
+    },
+    {
+      "id": "e690",
+      "task": "gsdwe",
+      "completed": false,
+      "date": "2025-06-11",
+      "description": "default"
+    },
+    {
+      "id": "b0f4",
+      "task": "fsd",
+      "completed": false,
+      "date": "2025-06-11",
+      "description": "default"
+    },
+    {
+      "id": "f37b",
+      "task": "wesdaasg",
+      "completed": false,
+      "date": "2025-06-11",
+      "description": "default"
+    }
+  ]
 }

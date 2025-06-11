@@ -38,7 +38,7 @@ export default function MainPage() {
       <div className="todo-box">
         <div className="nav-links">
           <Link to="/" className="nav-link" style={{ marginRight: "10px" }}>Main</Link>
-          <Link to="/detail" className="nav-link">Detail</Link>
+          <Link to="/all" className="nav-link">All Todos</Link>
         </div>
         <h2>To Do List</h2>
         <TodoInput task={task} setTask={setTask} handleAdd={handleAdd} />

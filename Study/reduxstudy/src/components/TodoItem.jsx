@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function TodoItem({ todo, onToggle, onDelete }) {
+function TodoItem({ todo, onToggle, onDelete }) {
   return (
     <li>
       <input
@@ -15,7 +16,12 @@ export default function TodoItem({ todo, onToggle, onDelete }) {
       >
         {todo.task}
       </span>
+      <Link to={`/detail/${todo.id}`}>
+      <button className="detail-btn">Detail</button>
+      </Link>
       <button onClick={() => onDelete(todo.id)}>🗑️</button>
     </li>
   );
 }
+
+export default TodoItem;
