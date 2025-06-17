@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function TodoItem({ todo, onToggle, onDelete }) {
+export default function TodoItem({ todo, onToggle, onDelete }) {
   return (
     <li>
       <input
@@ -23,5 +23,3 @@ function TodoItem({ todo, onToggle, onDelete }) {
     </li>
   );
 }
-
-export default TodoItem;

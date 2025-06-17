@@ -5,7 +5,7 @@ import DetailPage from "./page/DetailPage";
 import TodoDetailPage from "./page/TodoDetailPage";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <Switch>
       <Route exact path="/" component={MainPage} />
@@ -15,7 +15,5 @@ function App() {
     </Switch>
   );
 }
-
-export default App;
 
 

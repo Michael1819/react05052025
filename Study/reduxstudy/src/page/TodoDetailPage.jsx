@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchTodos } from "../redux/actions";
 
-function TodoDetailPage() {
+export default function TodoDetailPage() {
     const { id } = useParams();
     const dispatch = useDispatch();
     const todo = useSelector(state =>
@@ -88,6 +88,3 @@ function TodoDetailPage() {
         </div>
     );
 }
-
-export default TodoDetailPage;
-

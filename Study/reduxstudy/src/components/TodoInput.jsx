@@ -1,6 +1,6 @@
 import React from "react";
 
-function TodoInput({ task, setTask, handleAdd }) {
+export default function TodoInput({ task, setTask, handleAdd }) {
   return (
     <div className="input-group">
       <input
@@ -13,4 +13,3 @@ function TodoInput({ task, setTask, handleAdd }) {
   );
 }
 
-export default TodoInput;
