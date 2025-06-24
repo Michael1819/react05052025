@@ -6,5 +6,12 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     include: ["react-router-dom", "prop-types"]
+  },
+  test: {
+    environment: "jsdom",
+    globals: true,
+    setupFiles: "/src/setup.js",
   }
 });
+
+ 
